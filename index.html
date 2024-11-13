@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sistema de Pedidos de Panificadora</title>
+</head>
+<body>
+    <h1>Sistema de Pedidos de Panificadora</h1>
+
+    <!-- Login Section -->
+    <div id="loginSection">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Nome de Usuário">
+        <input type="password" id="password" placeholder="Senha">
+        <button id="loginButton">Entrar</button>
+        <button id="registerButton">Cadastrar Usuário</button>
+        <div id="loginMessage"></div>
+    </div>
+
+    <!-- Order System Section -->
+    <div id="orderSystem" style="display: none;">
+        <input type="text" id="nomeCliente" placeholder="Nome do Cliente">
+        <div id="produtos">
+            <h2>Selecione os Produtos</h2>
+            <label><input type="checkbox" value="Pão - R$ 5,00"> Pão - R$ 5,00</label>
+            <label><input type="checkbox" value="Bolo - R$ 25,00"> Bolo - R$ 25,00</label>
+            <label><input type="checkbox" value="Biscoito - R$ 10,00"> Biscoito - R$ 10,00</label>
+            <label><input type="checkbox" value="Croissant - R$ 7,00"> Croissant - R$ 7,00</label>
+            <label><input type="checkbox" value="Tortinha - R$ 12,00"> Tortinha - R$ 12,00</label>
+        </div>
+        <button id="registrarPedido">Registrar Pedido</button>
+        <div id="resultado"></div>
+
+        <h3>Calcular Troco</h3>
+        <input type="number" id="valorRecebido" placeholder="Valor Recebido">
+        <button id="calcularTroco">Calcular Troco</button>
+        <div id="trocoResultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Campos e botões */
+input[type="text"], input[type="password"], input[type="number"], button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Seção de produtos e resultados */
+#produtos, #trocoResultado {
+    margin: 20px 0;
+}
+
+/* Estilo da seção de login */
+#loginSection {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#loginSection h2 {
+    color: #333;
+}
+
+#loginMessage {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
